@@ -1,0 +1,12 @@
+1 entries in records
+1 entries in records
+🔹 Processing DB record: address
+🔹 Processing DB record: address
+🔍 Final modified query: SELECT AddressID, AddressLine1, AddressLine2, City, StateProvinceID, PostalCode, CAST(SpatialLocation AS NVARCHAR(MAX)) AS SpatialLocation, CAST(rowguid AS NVARCHAR(MAX)) AS rowguid, ModifiedDate FROM Person.address
+🔍 Final modified query: SELECT AddressID, AddressLine1, AddressLine2, City, StateProvinceID, PostalCode, CAST(SpatialLocation AS NVARCHAR(MAX)) AS SpatialLocation, CAST(rowguid AS NVARCHAR(MAX)) AS rowguid, ModifiedDate FROM Person.address
+✅ Copied 19614 records to staging
+✅ Copied 19614 records to staging
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 3.55 seconds
+Total time taken 3.55 seconds

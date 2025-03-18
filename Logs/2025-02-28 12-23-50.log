@@ -1,0 +1,12 @@
+1 entries in records
+1 entries in records
+🔹 Processing DB record: salesperson
+🔹 Processing DB record: salesperson
+⚠️ Table stg_salesperson does not exist in staging. Creating it...
+⚠️ Table stg_salesperson does not exist in staging. Creating it...
+❌ DB extraction error: ❌ Source table salesperson not found.
+❌ DB extraction error: ❌ Source table salesperson not found.
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 0.55 seconds
+Total time taken 0.55 seconds

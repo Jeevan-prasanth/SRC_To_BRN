@@ -1,0 +1,10 @@
+1 entries in records
+1 entries in records
+🔹 Extracting schema from SQL Server source: Person.person
+🔹 Extracting schema from SQL Server source: Person.person
+❌ Error processing record person: 'nullable'
+❌ Error processing record person: 'nullable'
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 0.72 seconds
+Total time taken 0.72 seconds

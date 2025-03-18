@@ -1,0 +1,12 @@
+1 entries in records
+1 entries in records
+🔹 Processing DB record: salesorderdetail
+🔹 Processing DB record: salesorderdetail
+🔍 Final modified query: SELECT SalesOrderID, SalesOrderDetailID, CarrierTrackingNumber, OrderQty, ProductID, SpecialOfferID, UnitPrice, UnitPriceDiscount, LineTotal, CAST(rowguid AS NVARCHAR(MAX)) AS rowguid, ModifiedDate FROM Sales.salesorderdetail
+🔍 Final modified query: SELECT SalesOrderID, SalesOrderDetailID, CarrierTrackingNumber, OrderQty, ProductID, SpecialOfferID, UnitPrice, UnitPriceDiscount, LineTotal, CAST(rowguid AS NVARCHAR(MAX)) AS rowguid, ModifiedDate FROM Sales.salesorderdetail
+✅ Copied 121317 records to staging
+✅ Copied 121317 records to staging
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 36.65 seconds
+Total time taken 36.65 seconds

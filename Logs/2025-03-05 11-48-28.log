@@ -1,0 +1,10 @@
+1 entries in records
+1 entries in records
+🔹 Processing DB record: salesorderdetail
+🔹 Processing DB record: salesorderdetail
+❌ DB extraction error: module 'numpy' has no attribute 'uuid1'
+❌ DB extraction error: module 'numpy' has no attribute 'uuid1'
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 1.54 seconds
+Total time taken 1.54 seconds

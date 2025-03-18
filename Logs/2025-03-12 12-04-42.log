@@ -1,0 +1,4 @@
+1 entries in records
+❌ Error processing record address: 'in <string>' requires string as left operand, not INTEGER
+Finished running source to staging in series
+Total time taken 1.01 seconds

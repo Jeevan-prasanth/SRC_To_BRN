@@ -1,0 +1,18 @@
+1 entries in records
+1 entries in records
+🔹 Processing flat file: sales.csv
+🔹 Processing flat file: sales.csv
+✅ Metadata for sales.csv stored in source_lookup!
+✅ Metadata for sales.csv stored in source_lookup!
+✅ Stored procedure ods.usp_SrcToMain_lookup executed successfully!
+✅ Stored procedure ods.usp_SrcToMain_lookup executed successfully!
+🔹 Generating CREATE TABLE statements from main_lookup...
+🔹 Generating CREATE TABLE statements from main_lookup...
+✅ Table creation process completed!
+✅ Table creation process completed!
+✅ Copied 1000 records to staging
+✅ Copied 1000 records to staging
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 7.22 seconds
+Total time taken 7.22 seconds

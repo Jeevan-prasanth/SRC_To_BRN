@@ -1,0 +1,28 @@
+1 entries in records
+1 entries in records
+❌ Error processing record address: (psycopg2.errors.UndefinedColumn) column l.table_name does not exist
+LINE 2:             SELECT l.table_name, l.column_name, l.user_data_...
+                           ^
+
+[SQL: 
+            SELECT l.table_name, l.column_name, l.user_data_type, l.length, 
+                   l.precision, l.scale, l.nullable, l.key_constraint
+            FROM schema_lookup l
+            ORDER BY l.table_name, l.column_id;
+        ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+❌ Error processing record address: (psycopg2.errors.UndefinedColumn) column l.table_name does not exist
+LINE 2:             SELECT l.table_name, l.column_name, l.user_data_...
+                           ^
+
+[SQL: 
+            SELECT l.table_name, l.column_name, l.user_data_type, l.length, 
+                   l.precision, l.scale, l.nullable, l.key_constraint
+            FROM schema_lookup l
+            ORDER BY l.table_name, l.column_id;
+        ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 0.45 seconds
+Total time taken 0.45 seconds

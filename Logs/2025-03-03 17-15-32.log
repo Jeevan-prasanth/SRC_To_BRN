@@ -1,0 +1,4 @@
+1 entries in records
+Error processing record address: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'RFL813\\JeevanPrasanth\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "AdventureWorks" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'RFL813\\JeevanPrasanth\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "AdventureWorks" requested by the login. The login failed. (4060)')
+Finished running source to staging in series
+Total time taken 0.09 seconds

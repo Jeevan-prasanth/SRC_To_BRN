@@ -1,0 +1,10 @@
+1 entries in records
+1 entries in records
+Processing DB record: salesperson
+Processing DB record: salesperson
+DB extraction error: Unknown datetime string format, unable to parse: 48754992-9EE0-4C0E-8C94-9451604E3E02, at position 0
+DB extraction error: Unknown datetime string format, unable to parse: 48754992-9EE0-4C0E-8C94-9451604E3E02, at position 0
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 0.46 seconds
+Total time taken 0.46 seconds

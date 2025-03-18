@@ -1,0 +1,12 @@
+1 entries in records
+1 entries in records
+🔹 Processing DB record: address
+🔹 Processing DB record: address
+⚠️ Table stg_address does not exist in staging. Creating it...
+⚠️ Table stg_address does not exist in staging. Creating it...
+❌ DB extraction error: ❌ Source table address not found.
+❌ DB extraction error: ❌ Source table address not found.
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 9.95 seconds
+Total time taken 9.95 seconds

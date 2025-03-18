@@ -1,0 +1,36 @@
+1 entries in records
+❌ Error processing record address: (psycopg2.errors.SyntaxError) syntax error at or near "null"
+LINE 7:     "SpatialLocation" null,
+                              ^
+
+[SQL: CREATE TABLE "address" ("AddressID" integer PRIMARY KEY NOT NULL,
+    "AddressID" integer PRIMARY KEY NOT NULL,
+    "AddressID" integer PRIMARY KEY NOT NULL,
+    "City" nvarchar(30) collate "sql_latin1_general_cp1_ci_as" NOT NULL,
+    "StateProvinceID" integer NOT NULL,
+    "PostalCode" nvarchar(15) collate "sql_latin1_general_cp1_ci_as" NOT NULL,
+    "SpatialLocation" null,
+    "rowguid" uniqueidentifier NOT NULL,
+    "ModifiedDate" datetime NOT NULL,
+    "AddressLine1" nvarchar(60) collate "sql_latin1_general_cp1_ci_as" NOT NULL,
+    "AddressLine2" nvarchar(60) collate "sql_latin1_general_cp1_ci_as",
+    "City" nvarchar(30) collate "sql_latin1_general_cp1_ci_as" NOT NULL,
+    "StateProvinceID" integer NOT NULL,
+    "PostalCode" nvarchar(15) collate "sql_latin1_general_cp1_ci_as" NOT NULL,
+    "SpatialLocation" null,
+    "rowguid" uniqueidentifier NOT NULL,
+    "ModifiedDate" datetime NOT NULL,
+    "AddressLine1" nvarchar(60) collate "sql_latin1_general_cp1_ci_as" NOT NULL,
+    "AddressLine2" nvarchar(60) collate "sql_latin1_general_cp1_ci_as",
+    "City" nvarchar(30) collate "sql_latin1_general_cp1_ci_as" NOT NULL,
+    "StateProvinceID" integer NOT NULL,
+    "PostalCode" nvarchar(15) collate "sql_latin1_general_cp1_ci_as" NOT NULL,
+    "SpatialLocation" null,
+    "rowguid" uniqueidentifier NOT NULL,
+    "ModifiedDate" datetime NOT NULL,
+    "AddressLine1" nvarchar(60) collate "sql_latin1_general_cp1_ci_as" NOT NULL,
+    "AddressLine2" nvarchar(60) collate "sql_latin1_general_cp1_ci_as"
+);]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Finished running source to staging in series
+Total time taken 1.25 seconds

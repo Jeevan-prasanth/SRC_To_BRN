@@ -1,0 +1,10 @@
+1 entries in records
+1 entries in records
+Processing DB record: salesperson
+Processing DB record: salesperson
+DB extraction error: DatabaseETL.convert_data_types() got multiple values for argument 'target_db'
+DB extraction error: DatabaseETL.convert_data_types() got multiple values for argument 'target_db'
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 0.09 seconds
+Total time taken 0.09 seconds

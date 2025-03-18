@@ -1,0 +1,80 @@
+1 entries in records
+1 entries in records
+🔹 Extracting schema from MySQL source: sakila.actor
+🔹 Extracting schema from MySQL source: sakila.actor
+❌ Error processing record actor: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '::BOOLEAN AS nullable ,\n                    CASE \n                        WHEN k' at line 11")
+[SQL: 
+                SELECT distinct
+                    cols.ordinal_position AS column_id,
+                    cols.column_name as column_name,
+                    cols.data_type AS source_data_type,
+                    cols.character_maximum_length AS length,
+                    cols.numeric_precision AS 'precision',
+                    cols.numeric_scale AS scale,
+                    CASE
+                        WHEN cols.is_nullable = 'YES' THEN TRUE
+                        ELSE FALSE
+                    END::BOOLEAN AS nullable ,
+                    CASE 
+                        WHEN kcu.constraint_name IS NOT NULL THEN 'PRIMARY KEY'
+                        ELSE ''
+                    END AS key_constraint
+                FROM 
+                    information_schema.columns AS cols
+                LEFT JOIN 
+                    information_schema.key_column_usage AS kcu
+                    ON cols.column_name = kcu.column_name
+                    AND cols.table_name = kcu.table_name
+                    AND cols.table_schema = kcu.table_schema
+                LEFT JOIN 
+                    information_schema.table_constraints AS tc
+                    ON kcu.constraint_name = tc.constraint_name
+                    AND tc.constraint_type = 'PRIMARY KEY'
+                WHERE 
+                    cols.table_schema = 'sakila' 
+                    AND cols.table_name = 'actor'
+                ORDER BY 
+                    cols.ordinal_position;
+
+            ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+❌ Error processing record actor: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '::BOOLEAN AS nullable ,\n                    CASE \n                        WHEN k' at line 11")
+[SQL: 
+                SELECT distinct
+                    cols.ordinal_position AS column_id,
+                    cols.column_name as column_name,
+                    cols.data_type AS source_data_type,
+                    cols.character_maximum_length AS length,
+                    cols.numeric_precision AS 'precision',
+                    cols.numeric_scale AS scale,
+                    CASE
+                        WHEN cols.is_nullable = 'YES' THEN TRUE
+                        ELSE FALSE
+                    END::BOOLEAN AS nullable ,
+                    CASE 
+                        WHEN kcu.constraint_name IS NOT NULL THEN 'PRIMARY KEY'
+                        ELSE ''
+                    END AS key_constraint
+                FROM 
+                    information_schema.columns AS cols
+                LEFT JOIN 
+                    information_schema.key_column_usage AS kcu
+                    ON cols.column_name = kcu.column_name
+                    AND cols.table_name = kcu.table_name
+                    AND cols.table_schema = kcu.table_schema
+                LEFT JOIN 
+                    information_schema.table_constraints AS tc
+                    ON kcu.constraint_name = tc.constraint_name
+                    AND tc.constraint_type = 'PRIMARY KEY'
+                WHERE 
+                    cols.table_schema = 'sakila' 
+                    AND cols.table_name = 'actor'
+                ORDER BY 
+                    cols.ordinal_position;
+
+            ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 0.07 seconds
+Total time taken 0.07 seconds

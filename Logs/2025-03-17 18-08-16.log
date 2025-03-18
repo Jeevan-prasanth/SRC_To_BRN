@@ -1,0 +1,20 @@
+1 entries in records
+1 entries in records
+🔹 Extracting schema from SQL Server source: production.productreview
+🔹 Extracting schema from SQL Server source: production.productreview
+✅ Metadata for production.productreview stored in source_lookup successfully!
+✅ Metadata for production.productreview stored in source_lookup successfully!
+✅ Stored procedure ods.usp_SrcToMain_lookup executed successfully!
+✅ Stored procedure ods.usp_SrcToMain_lookup executed successfully!
+🔹 Generating CREATE TABLE statements from main_lookup...
+🔹 Generating CREATE TABLE statements from main_lookup...
+✅ Table creation process completed!
+✅ Table creation process completed!
+🔹 Processing DB record: productreview
+🔹 Processing DB record: productreview
+✅ Copied 4 records to staging
+✅ Copied 4 records to staging
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 1.00 seconds
+Total time taken 1.00 seconds

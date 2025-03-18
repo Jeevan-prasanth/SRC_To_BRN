@@ -1,0 +1,8 @@
+1 entries in records
+1 entries in records
+❌ Error processing record address: 'INTEGER' object has no attribute 'isnull'
+❌ Error processing record address: 'INTEGER' object has no attribute 'isnull'
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 1.09 seconds
+Total time taken 1.09 seconds

@@ -1,0 +1,16 @@
+1 entries in records
+1 entries in records
+🔹 Processing DB record: address
+🔹 Processing DB record: address
+🔍 Final modified query: SELECT  FROM stg.stg_address
+🔍 Final modified query: SELECT  FROM stg.stg_address
+❌ DB extraction error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'FROM'. (156) (SQLExecDirectW)")
+[SQL: SELECT  FROM stg.stg_address]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+❌ DB extraction error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'FROM'. (156) (SQLExecDirectW)")
+[SQL: SELECT  FROM stg.stg_address]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 0.34 seconds
+Total time taken 0.34 seconds

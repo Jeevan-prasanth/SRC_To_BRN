@@ -1,0 +1,24 @@
+1 entries in records
+1 entries in records
+🔹 Extracting schema from SQL Server source: Person.address
+🔹 Extracting schema from SQL Server source: Person.address
+✅ Metadata for Person.address stored in source_lookup successfully!
+✅ Metadata for Person.address stored in source_lookup successfully!
+❌ Error processing record address: (psycopg2.errors.UndefinedFunction) procedure usp_srctomain_lookup() does not exist
+LINE 1: call usp_SrcToMain_lookup()
+             ^
+HINT:  No procedure matches the given name and argument types. You might need to add explicit type casts.
+
+[SQL: call usp_SrcToMain_lookup()]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+❌ Error processing record address: (psycopg2.errors.UndefinedFunction) procedure usp_srctomain_lookup() does not exist
+LINE 1: call usp_SrcToMain_lookup()
+             ^
+HINT:  No procedure matches the given name and argument types. You might need to add explicit type casts.
+
+[SQL: call usp_SrcToMain_lookup()]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 1.17 seconds
+Total time taken 1.17 seconds

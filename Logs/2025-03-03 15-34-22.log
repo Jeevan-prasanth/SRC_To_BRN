@@ -1,0 +1,5 @@
+1 entries in records
+🔹 Processing DB record: address
+❌ DB extraction error: 'Connection' object has no attribute 'cursor'
+Finished running source to staging in series
+Total time taken 0.26 seconds

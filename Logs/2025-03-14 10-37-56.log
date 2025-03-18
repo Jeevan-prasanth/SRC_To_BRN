@@ -1,0 +1,12 @@
+1 entries in records
+1 entries in records
+🔹 Extracting schema from SQL Server source: Sales.salesorderdetail
+🔹 Extracting schema from SQL Server source: Sales.salesorderdetail
+⚠️ No metadata extraction logic for source type: SQL Server
+⚠️ No metadata extraction logic for source type: SQL Server
+⚠️ No metadata found for Sales.salesorderdetail
+⚠️ No metadata found for Sales.salesorderdetail
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 0.00 seconds
+Total time taken 0.00 seconds

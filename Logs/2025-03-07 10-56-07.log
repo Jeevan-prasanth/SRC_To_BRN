@@ -1,0 +1,8 @@
+1 entries in records
+1 entries in records
+❌ Error processing record address: Can't reconnect until invalid transaction is rolled back.  Please rollback() fully before proceeding (Background on this error at: https://sqlalche.me/e/20/8s2b)
+❌ Error processing record address: Can't reconnect until invalid transaction is rolled back.  Please rollback() fully before proceeding (Background on this error at: https://sqlalche.me/e/20/8s2b)
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 1.25 seconds
+Total time taken 1.25 seconds

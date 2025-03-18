@@ -1,0 +1,14 @@
+1 entries in records
+1 entries in records
+🔹 Processing DB record: address
+🔹 Processing DB record: address
+✅ Schema stg ensured in staging.
+✅ Schema stg ensured in staging.
+⚠️ Staging table stg.stg_address does not exist. Creating it...
+⚠️ Staging table stg.stg_address does not exist. Creating it...
+❌ DB extraction error: stg_address
+❌ DB extraction error: stg_address
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 0.56 seconds
+Total time taken 0.56 seconds

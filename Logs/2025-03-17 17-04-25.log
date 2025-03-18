@@ -1,0 +1,78 @@
+1 entries in records
+1 entries in records
+🔹 Extracting schema from SQL Server source: Production.product
+🔹 Extracting schema from SQL Server source: Production.product
+✅ Metadata for Production.product stored in source_lookup successfully!
+✅ Metadata for Production.product stored in source_lookup successfully!
+✅ Stored procedure ods.usp_SrcToMain_lookup executed successfully!
+✅ Stored procedure ods.usp_SrcToMain_lookup executed successfully!
+🔹 Generating CREATE TABLE statements from main_lookup...
+🔹 Generating CREATE TABLE statements from main_lookup...
+❌ Error processing record product: (psycopg2.errors.InvalidTableDefinition) multiple primary keys for table "stg_product" are not allowed
+LINE 13:     "SizeUnitMeasureCode" CHAR(3) PRIMARY KEY,
+                                           ^
+
+[SQL: CREATE TABLE IF NOT EXISTS stg."stg_product" (
+    "ProductID" INTEGER PRIMARY KEY,
+    "Name" VARCHAR(50),
+    "ProductNumber" VARCHAR(25),
+    "MakeFlag" BOOLEAN,
+    "FinishedGoodsFlag" BOOLEAN,
+    "Color" VARCHAR(15),
+    "SafetyStockLevel" SMALLINT,
+    "ReorderPoint" SMALLINT,
+    "StandardCost" NUMERIC(19,4),
+    "ListPrice" NUMERIC(19,4),
+    "Size" VARCHAR(5),
+    "SizeUnitMeasureCode" CHAR(3) PRIMARY KEY,
+    "WeightUnitMeasureCode" CHAR(3) PRIMARY KEY,
+    "Weight" NUMERIC(8, 2),
+    "DaysToManufacture" INTEGER,
+    "ProductLine" CHAR(2),
+    "Class" CHAR(2),
+    "Style" CHAR(2),
+    "ProductSubcategoryID" INTEGER PRIMARY KEY,
+    "ProductModelID" INTEGER PRIMARY KEY,
+    "SellStartDate" TIMESTAMP,
+    "SellEndDate" TIMESTAMP,
+    "DiscontinuedDate" TIMESTAMP,
+    "rowguid" UUID,
+    "ModifiedDate" TIMESTAMP
+);]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+❌ Error processing record product: (psycopg2.errors.InvalidTableDefinition) multiple primary keys for table "stg_product" are not allowed
+LINE 13:     "SizeUnitMeasureCode" CHAR(3) PRIMARY KEY,
+                                           ^
+
+[SQL: CREATE TABLE IF NOT EXISTS stg."stg_product" (
+    "ProductID" INTEGER PRIMARY KEY,
+    "Name" VARCHAR(50),
+    "ProductNumber" VARCHAR(25),
+    "MakeFlag" BOOLEAN,
+    "FinishedGoodsFlag" BOOLEAN,
+    "Color" VARCHAR(15),
+    "SafetyStockLevel" SMALLINT,
+    "ReorderPoint" SMALLINT,
+    "StandardCost" NUMERIC(19,4),
+    "ListPrice" NUMERIC(19,4),
+    "Size" VARCHAR(5),
+    "SizeUnitMeasureCode" CHAR(3) PRIMARY KEY,
+    "WeightUnitMeasureCode" CHAR(3) PRIMARY KEY,
+    "Weight" NUMERIC(8, 2),
+    "DaysToManufacture" INTEGER,
+    "ProductLine" CHAR(2),
+    "Class" CHAR(2),
+    "Style" CHAR(2),
+    "ProductSubcategoryID" INTEGER PRIMARY KEY,
+    "ProductModelID" INTEGER PRIMARY KEY,
+    "SellStartDate" TIMESTAMP,
+    "SellEndDate" TIMESTAMP,
+    "DiscontinuedDate" TIMESTAMP,
+    "rowguid" UUID,
+    "ModifiedDate" TIMESTAMP
+);]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 0.93 seconds
+Total time taken 0.93 seconds

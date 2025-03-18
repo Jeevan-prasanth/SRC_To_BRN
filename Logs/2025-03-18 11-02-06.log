@@ -1,0 +1,6 @@
+1 entries in records
+🔹 Extracting schema from SQL Server source: dbo.employee
+❌ Error processing record employee: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: The wait operation timed out.\r\n (258) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (258)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Finished running source to staging in series
+Total time taken 15.20 seconds

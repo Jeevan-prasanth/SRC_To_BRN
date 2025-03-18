@@ -1,0 +1,10 @@
+1 entries in records
+1 entries in records
+🔹 Processing DB record: address
+🔹 Processing DB record: address
+❌ DB extraction error: ('ODBC SQL type -151 is not yet supported.  column-index=6  type=-151', 'HY106')
+❌ DB extraction error: ('ODBC SQL type -151 is not yet supported.  column-index=6  type=-151', 'HY106')
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 0.32 seconds
+Total time taken 0.32 seconds

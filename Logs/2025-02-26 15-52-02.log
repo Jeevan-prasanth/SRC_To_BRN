@@ -1,0 +1,10 @@
+1 entries in records
+1 entries in records
+Error processing record person: (pyodbc.InterfaceError) ('IM002', '[IM002] [Microsoft][ODBC Driver Manager] Data source name not found and no default driver specified (0) (SQLDriverConnect)')
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+Error processing record person: (pyodbc.InterfaceError) ('IM002', '[IM002] [Microsoft][ODBC Driver Manager] Data source name not found and no default driver specified (0) (SQLDriverConnect)')
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 0.00 seconds
+Total time taken 0.00 seconds

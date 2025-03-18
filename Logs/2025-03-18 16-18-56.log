@@ -1,0 +1,9 @@
+1 entries in records
+🔹 Processing API record: sampleapi
+✅ Metadata for sampleapi stored in source_lookup!
+✅ Stored procedure ods.usp_SrcToMain_lookup executed successfully!
+🔹 Generating CREATE TABLE statements from main_lookup...
+✅ Table creation process completed!
+✅ Copied 100 records to staging
+Finished running source to staging in series
+Total time taken 0.69 seconds

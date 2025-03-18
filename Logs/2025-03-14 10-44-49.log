@@ -1,0 +1,10 @@
+1 entries in records
+1 entries in records
+🔹 Extracting schema from SQL Server source: Person.address
+🔹 Extracting schema from SQL Server source: Person.address
+✅ Metadata for Person.address stored in source_lookup successfully!
+✅ Metadata for Person.address stored in source_lookup successfully!
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 2.49 seconds
+Total time taken 2.49 seconds

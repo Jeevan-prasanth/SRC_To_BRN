@@ -1,0 +1,76 @@
+1 entries in records
+1 entries in records
+🔹 Extracting schema from SQL Server source: Person.address
+🔹 Extracting schema from SQL Server source: Person.address
+✅ Metadata for Person.address stored in source_lookup successfully!
+✅ Metadata for Person.address stored in source_lookup successfully!
+✅ Stored procedure ods.usp_SrcToMain_lookup executed successfully!
+✅ Stored procedure ods.usp_SrcToMain_lookup executed successfully!
+🔹 Generating CREATE TABLE statements from main_lookup...
+🔹 Generating CREATE TABLE statements from main_lookup...
+📝 Executing SQL:
+CREATE TABLE IF NOT EXISTS stg."stg_address" (
+    "AddressID" INTEGER,
+    "AddressLine1" VARCHAR(120),
+    "AddressLine2" VARCHAR(120),
+    "City" VARCHAR(60),
+    "StateProvinceID" INTEGER,
+    "PostalCode" VARCHAR(30),
+    "SpatialLocation" GEOGRAPHY,
+    "SpatialLocation" TEXT(-1),
+    "rowguid" UUID,
+    "ModifiedDate" TIMESTAMP
+);
+
+📝 Executing SQL:
+CREATE TABLE IF NOT EXISTS stg."stg_address" (
+    "AddressID" INTEGER,
+    "AddressLine1" VARCHAR(120),
+    "AddressLine2" VARCHAR(120),
+    "City" VARCHAR(60),
+    "StateProvinceID" INTEGER,
+    "PostalCode" VARCHAR(30),
+    "SpatialLocation" GEOGRAPHY,
+    "SpatialLocation" TEXT(-1),
+    "rowguid" UUID,
+    "ModifiedDate" TIMESTAMP
+);
+
+❌ Error processing record address: (psycopg2.errors.UndefinedObject) type "geography" does not exist
+LINE 8:     "SpatialLocation" GEOGRAPHY,
+                              ^
+
+[SQL: CREATE TABLE IF NOT EXISTS stg."stg_address" (
+    "AddressID" INTEGER,
+    "AddressLine1" VARCHAR(120),
+    "AddressLine2" VARCHAR(120),
+    "City" VARCHAR(60),
+    "StateProvinceID" INTEGER,
+    "PostalCode" VARCHAR(30),
+    "SpatialLocation" GEOGRAPHY,
+    "SpatialLocation" TEXT(-1),
+    "rowguid" UUID,
+    "ModifiedDate" TIMESTAMP
+);]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+❌ Error processing record address: (psycopg2.errors.UndefinedObject) type "geography" does not exist
+LINE 8:     "SpatialLocation" GEOGRAPHY,
+                              ^
+
+[SQL: CREATE TABLE IF NOT EXISTS stg."stg_address" (
+    "AddressID" INTEGER,
+    "AddressLine1" VARCHAR(120),
+    "AddressLine2" VARCHAR(120),
+    "City" VARCHAR(60),
+    "StateProvinceID" INTEGER,
+    "PostalCode" VARCHAR(30),
+    "SpatialLocation" GEOGRAPHY,
+    "SpatialLocation" TEXT(-1),
+    "rowguid" UUID,
+    "ModifiedDate" TIMESTAMP
+);]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 1.18 seconds
+Total time taken 1.18 seconds

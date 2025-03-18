@@ -1,0 +1,54 @@
+1 entries in records
+🔹 Extracting schema from SQL Server source: Person.address
+✅ Metadata for Person.address stored in source_lookup successfully!
+✅ Stored procedure ods.usp_SrcToMain_lookup executed successfully!
+🔹 Generating CREATE TABLE statements from main_lookup...
+📝 Executing SQL:
+CREATE TABLE IF NOT EXISTS stg."stg_address" (
+    "AddressID" INTEGER(4),
+    "AddressID" INTEGER(4),
+    "AddressLine1" VARCHAR(120),
+    "AddressLine1" VARCHAR(120),
+    "AddressLine2" VARCHAR(120),
+    "AddressLine2" VARCHAR(120),
+    "City" VARCHAR(60),
+    "City" VARCHAR(60),
+    "StateProvinceID" INTEGER(4),
+    "StateProvinceID" INTEGER(4),
+    "PostalCode" VARCHAR(30),
+    "PostalCode" VARCHAR(30),
+    "SpatialLocation" GEOGRAPHY(-1),
+    "SpatialLocation" GEOGRAPHY(-1),
+    "rowguid" UUID(16),
+    "rowguid" UUID(16),
+    "ModifiedDate" TIMESTAMP(8),
+    "ModifiedDate" TIMESTAMP(8)
+);
+
+❌ Error processing record address: (psycopg2.errors.SyntaxError) syntax error at or near "("
+LINE 2:     "AddressID" INTEGER(4),
+                               ^
+
+[SQL: CREATE TABLE IF NOT EXISTS stg."stg_address" (
+    "AddressID" INTEGER(4),
+    "AddressID" INTEGER(4),
+    "AddressLine1" VARCHAR(120),
+    "AddressLine1" VARCHAR(120),
+    "AddressLine2" VARCHAR(120),
+    "AddressLine2" VARCHAR(120),
+    "City" VARCHAR(60),
+    "City" VARCHAR(60),
+    "StateProvinceID" INTEGER(4),
+    "StateProvinceID" INTEGER(4),
+    "PostalCode" VARCHAR(30),
+    "PostalCode" VARCHAR(30),
+    "SpatialLocation" GEOGRAPHY(-1),
+    "SpatialLocation" GEOGRAPHY(-1),
+    "rowguid" UUID(16),
+    "rowguid" UUID(16),
+    "ModifiedDate" TIMESTAMP(8),
+    "ModifiedDate" TIMESTAMP(8)
+);]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Finished running source to staging in series
+Total time taken 1.09 seconds

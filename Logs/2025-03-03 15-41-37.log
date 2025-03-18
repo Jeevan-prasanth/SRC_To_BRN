@@ -1,0 +1,10 @@
+1 entries in records
+1 entries in records
+🔹 Processing DB record: address
+🔹 Processing DB record: address
+❌ DB extraction error: stg.stg_address
+❌ DB extraction error: stg.stg_address
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 0.41 seconds
+Total time taken 0.41 seconds

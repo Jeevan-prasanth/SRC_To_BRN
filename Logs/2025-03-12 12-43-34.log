@@ -1,0 +1,42 @@
+1 entries in records
+1 entries in records
+❌ Error processing record address: (psycopg2.errors.UndefinedObject) type "geography" does not exist
+LINE 9:   SpatialLocation geography NULL,
+                          ^
+
+[SQL: CREATE TABLE address (
+  AddressID integer NULL,
+  AddressLine1 varchar(120) NULL,
+  AddressLine2 varchar(120) NULL,
+  City varchar(60) NULL,
+  StateProvinceID integer NULL,
+  StateProvinceID integer NULL,
+  PostalCode varchar(30) NULL,
+  SpatialLocation geography NULL,
+  rowguid uuid NULL,
+  ModifiedDate timestamp NULL,
+  PRIMARY KEY (AddressID)
+);]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+❌ Error processing record address: (psycopg2.errors.UndefinedObject) type "geography" does not exist
+LINE 9:   SpatialLocation geography NULL,
+                          ^
+
+[SQL: CREATE TABLE address (
+  AddressID integer NULL,
+  AddressLine1 varchar(120) NULL,
+  AddressLine2 varchar(120) NULL,
+  City varchar(60) NULL,
+  StateProvinceID integer NULL,
+  StateProvinceID integer NULL,
+  PostalCode varchar(30) NULL,
+  SpatialLocation geography NULL,
+  rowguid uuid NULL,
+  ModifiedDate timestamp NULL,
+  PRIMARY KEY (AddressID)
+);]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 1.21 seconds
+Total time taken 1.21 seconds

@@ -1,0 +1,38 @@
+1 entries in records
+1 entries in records
+🔹 Extracting schema from SQL Server source: Person.address
+🔹 Extracting schema from SQL Server source: Person.address
+✅ Metadata for Person.address stored in source_lookup successfully!
+✅ Metadata for Person.address stored in source_lookup successfully!
+✅ Stored procedure ods.usp_SrcToMain_lookup executed successfully!
+✅ Stored procedure ods.usp_SrcToMain_lookup executed successfully!
+🔹 Generating CREATE TABLE statements from main_lookup...
+🔹 Generating CREATE TABLE statements from main_lookup...
+❌ Error processing record address: (psycopg2.errors.UndefinedTable) relation "main_lookup" does not exist
+LINE 5:             FROM main_lookup
+                         ^
+
+[SQL: 
+            SELECT column_id, column_name, target_table, 
+                target_data_type, length, precision, scale, nullable, 
+                key_constraint, default_value
+            FROM main_lookup
+            ORDER BY target_table, column_id;
+        ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+❌ Error processing record address: (psycopg2.errors.UndefinedTable) relation "main_lookup" does not exist
+LINE 5:             FROM main_lookup
+                         ^
+
+[SQL: 
+            SELECT column_id, column_name, target_table, 
+                target_data_type, length, precision, scale, nullable, 
+                key_constraint, default_value
+            FROM main_lookup
+            ORDER BY target_table, column_id;
+        ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 0.61 seconds
+Total time taken 0.61 seconds

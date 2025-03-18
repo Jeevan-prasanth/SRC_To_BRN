@@ -1,0 +1,12 @@
+1 entries in records
+1 entries in records
+Processing DB record: address
+Processing DB record: address
+DB extraction error: (pyodbc.ProgrammingError) ('ODBC SQL type -151 is not yet supported.  column-index=6  type=-151', 'HY106')
+(Background on this error at: https://sqlalche.me/e/20/f405)
+DB extraction error: (pyodbc.ProgrammingError) ('ODBC SQL type -151 is not yet supported.  column-index=6  type=-151', 'HY106')
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 0.37 seconds
+Total time taken 0.37 seconds

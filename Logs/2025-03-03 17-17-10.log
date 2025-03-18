@@ -1,0 +1,8 @@
+1 entries in records
+1 entries in records
+Error processing record address: 'DatabaseETL' object has no attribute 'modify_query_for_unsupported_types'
+Error processing record address: 'DatabaseETL' object has no attribute 'modify_query_for_unsupported_types'
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 0.15 seconds
+Total time taken 0.15 seconds

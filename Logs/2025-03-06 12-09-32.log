@@ -1,0 +1,8 @@
+1 entries in records
+1 entries in records
+❌ Error processing record address: Not an executable object: 'CREATE TABLE "address" ("AddressID" integer PRIMARY KEY NOT NULL,\n    "AddressLine1" nvarchar(60) collate "sql_latin1_general_cp1_ci_as" NOT NULL,\n    "AddressLine2" nvarchar(60) collate "sql_latin1_general_cp1_ci_as",\n    "City" nvarchar(30) collate "sql_latin1_general_cp1_ci_as" NOT NULL,\n    "StateProvinceID" integer NOT NULL,\n    "PostalCode" nvarchar(15) collate "sql_latin1_general_cp1_ci_as" NOT NULL,\n    "SpatialLocation" null,\n    "rowguid" uuid NOT NULL,\n    "ModifiedDate" timestamp NOT NULL\n);'
+❌ Error processing record address: Not an executable object: 'CREATE TABLE "address" ("AddressID" integer PRIMARY KEY NOT NULL,\n    "AddressLine1" nvarchar(60) collate "sql_latin1_general_cp1_ci_as" NOT NULL,\n    "AddressLine2" nvarchar(60) collate "sql_latin1_general_cp1_ci_as",\n    "City" nvarchar(30) collate "sql_latin1_general_cp1_ci_as" NOT NULL,\n    "StateProvinceID" integer NOT NULL,\n    "PostalCode" nvarchar(15) collate "sql_latin1_general_cp1_ci_as" NOT NULL,\n    "SpatialLocation" null,\n    "rowguid" uuid NOT NULL,\n    "ModifiedDate" timestamp NOT NULL\n);'
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 0.46 seconds
+Total time taken 0.46 seconds

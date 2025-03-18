@@ -1,0 +1,24 @@
+1 entries in records
+1 entries in records
+🔹 Extracting schema from MySQL source: sakila.actor
+🔹 Extracting schema from MySQL source: sakila.actor
+❌ Error processing record actor: (psycopg2.errors.DatatypeMismatch) column "nullable" is of type boolean but expression is of type integer
+LINE 1: ...ALUES (1, 'actor_id', 'smallint', NULL, 5.0, 0.0, 0, 'PRIMAR...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+
+[SQL: INSERT INTO ods.source_lookup (column_id, column_name, source_data_type, length, precision, scale, nullable, key_constraint, source_type, source_schema, source_table, target_table) VALUES (%(column_id__0)s, %(column_name__0)s, %(source_data_type__0)s ... 780 characters truncated ... constraint__3)s, %(source_type__3)s, %(source_schema__3)s, %(source_table__3)s, %(target_table__3)s)]
+[parameters: {'column_name__0': 'actor_id', 'source_type__0': 'MySQL', 'nullable__0': 0, 'target_table__0': 'stg_actor', 'column_id__0': 1, 'scale__0': 0.0, 'key_constraint__0': 'PRIMARY KEY', 'length__0': None, 'source_table__0': 'actor', 'source_data_type__0': 'smallint', 'source_schema__0': 'sakila', 'precision__0': 5.0, 'column_name__1': 'first_name', 'source_type__1': 'MySQL', 'nullable__1': 0, 'target_table__1': 'stg_actor', 'column_id__1': 2, 'scale__1': None, 'key_constraint__1': '', 'length__1': 45.0, 'source_table__1': 'actor', 'source_data_type__1': 'varchar', 'source_schema__1': 'sakila', 'precision__1': None, 'column_name__2': 'last_name', 'source_type__2': 'MySQL', 'nullable__2': 0, 'target_table__2': 'stg_actor', 'column_id__2': 3, 'scale__2': None, 'key_constraint__2': '', 'length__2': 45.0, 'source_table__2': 'actor', 'source_data_type__2': 'varchar', 'source_schema__2': 'sakila', 'precision__2': None, 'column_name__3': 'last_update', 'source_type__3': 'MySQL', 'nullable__3': 0, 'target_table__3': 'stg_actor', 'column_id__3': 4, 'scale__3': None, 'key_constraint__3': '', 'length__3': None, 'source_table__3': 'actor', 'source_data_type__3': 'timestamp', 'source_schema__3': 'sakila', 'precision__3': None}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+❌ Error processing record actor: (psycopg2.errors.DatatypeMismatch) column "nullable" is of type boolean but expression is of type integer
+LINE 1: ...ALUES (1, 'actor_id', 'smallint', NULL, 5.0, 0.0, 0, 'PRIMAR...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+
+[SQL: INSERT INTO ods.source_lookup (column_id, column_name, source_data_type, length, precision, scale, nullable, key_constraint, source_type, source_schema, source_table, target_table) VALUES (%(column_id__0)s, %(column_name__0)s, %(source_data_type__0)s ... 780 characters truncated ... constraint__3)s, %(source_type__3)s, %(source_schema__3)s, %(source_table__3)s, %(target_table__3)s)]
+[parameters: {'column_name__0': 'actor_id', 'source_type__0': 'MySQL', 'nullable__0': 0, 'target_table__0': 'stg_actor', 'column_id__0': 1, 'scale__0': 0.0, 'key_constraint__0': 'PRIMARY KEY', 'length__0': None, 'source_table__0': 'actor', 'source_data_type__0': 'smallint', 'source_schema__0': 'sakila', 'precision__0': 5.0, 'column_name__1': 'first_name', 'source_type__1': 'MySQL', 'nullable__1': 0, 'target_table__1': 'stg_actor', 'column_id__1': 2, 'scale__1': None, 'key_constraint__1': '', 'length__1': 45.0, 'source_table__1': 'actor', 'source_data_type__1': 'varchar', 'source_schema__1': 'sakila', 'precision__1': None, 'column_name__2': 'last_name', 'source_type__2': 'MySQL', 'nullable__2': 0, 'target_table__2': 'stg_actor', 'column_id__2': 3, 'scale__2': None, 'key_constraint__2': '', 'length__2': 45.0, 'source_table__2': 'actor', 'source_data_type__2': 'varchar', 'source_schema__2': 'sakila', 'precision__2': None, 'column_name__3': 'last_update', 'source_type__3': 'MySQL', 'nullable__3': 0, 'target_table__3': 'stg_actor', 'column_id__3': 4, 'scale__3': None, 'key_constraint__3': '', 'length__3': None, 'source_table__3': 'actor', 'source_data_type__3': 'timestamp', 'source_schema__3': 'sakila', 'precision__3': None}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 0.14 seconds
+Total time taken 0.14 seconds

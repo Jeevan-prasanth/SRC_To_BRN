@@ -1,0 +1,5 @@
+1 entries in records
+🔹 Processing DB record: product
+❌ DB extraction error: __enter__
+Finished running source to staging in series
+Total time taken 0.22 seconds

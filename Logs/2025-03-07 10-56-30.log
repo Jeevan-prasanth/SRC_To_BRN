@@ -1,0 +1,12 @@
+1 entries in records
+1 entries in records
+✅ Table 'address' created successfully!
+✅ Table 'address' created successfully!
+🔹 Processing DB record: address
+🔹 Processing DB record: address
+✅ Copied 19614 records to staging
+✅ Copied 19614 records to staging
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 6.21 seconds
+Total time taken 6.21 seconds

@@ -1,0 +1,22 @@
+1 entries in records
+1 entries in records
+🔹 Extracting schema from MySQL source: sakila.actor
+🔹 Extracting schema from MySQL source: sakila.actor
+❌ Error processing record actor: (psycopg2.errors.UndefinedColumn) column "COLUMN_NAME" of relation "source_lookup" does not exist
+LINE 1: INSERT INTO ods.source_lookup (column_id, "COLUMN_NAME", sou...
+                                                  ^
+
+[SQL: INSERT INTO ods.source_lookup (column_id, "COLUMN_NAME", source_data_type, length, precision, scale, nullable, key_constraint, source_type, source_schema, source_table, target_table) VALUES (%(column_id__0)s, %(COLUMN_NAME__0)s, %(source_data_type__0 ... 782 characters truncated ... constraint__3)s, %(source_type__3)s, %(source_schema__3)s, %(source_table__3)s, %(target_table__3)s)]
+[parameters: {'key_constraint__0': 'PRIMARY KEY', 'source_schema__0': 'sakila', 'target_table__0': 'stg_actor', 'nullable__0': 0, 'column_id__0': 1, 'scale__0': 0.0, 'source_data_type__0': 'smallint', 'precision__0': 5.0, 'source_table__0': 'actor', 'source_type__0': 'MySQL', 'length__0': None, 'COLUMN_NAME__0': 'actor_id', 'key_constraint__1': '', 'source_schema__1': 'sakila', 'target_table__1': 'stg_actor', 'nullable__1': 0, 'column_id__1': 2, 'scale__1': None, 'source_data_type__1': 'varchar', 'precision__1': None, 'source_table__1': 'actor', 'source_type__1': 'MySQL', 'length__1': 45.0, 'COLUMN_NAME__1': 'first_name', 'key_constraint__2': '', 'source_schema__2': 'sakila', 'target_table__2': 'stg_actor', 'nullable__2': 0, 'column_id__2': 3, 'scale__2': None, 'source_data_type__2': 'varchar', 'precision__2': None, 'source_table__2': 'actor', 'source_type__2': 'MySQL', 'length__2': 45.0, 'COLUMN_NAME__2': 'last_name', 'key_constraint__3': '', 'source_schema__3': 'sakila', 'target_table__3': 'stg_actor', 'nullable__3': 0, 'column_id__3': 4, 'scale__3': None, 'source_data_type__3': 'timestamp', 'precision__3': None, 'source_table__3': 'actor', 'source_type__3': 'MySQL', 'length__3': None, 'COLUMN_NAME__3': 'last_update'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+❌ Error processing record actor: (psycopg2.errors.UndefinedColumn) column "COLUMN_NAME" of relation "source_lookup" does not exist
+LINE 1: INSERT INTO ods.source_lookup (column_id, "COLUMN_NAME", sou...
+                                                  ^
+
+[SQL: INSERT INTO ods.source_lookup (column_id, "COLUMN_NAME", source_data_type, length, precision, scale, nullable, key_constraint, source_type, source_schema, source_table, target_table) VALUES (%(column_id__0)s, %(COLUMN_NAME__0)s, %(source_data_type__0 ... 782 characters truncated ... constraint__3)s, %(source_type__3)s, %(source_schema__3)s, %(source_table__3)s, %(target_table__3)s)]
+[parameters: {'key_constraint__0': 'PRIMARY KEY', 'source_schema__0': 'sakila', 'target_table__0': 'stg_actor', 'nullable__0': 0, 'column_id__0': 1, 'scale__0': 0.0, 'source_data_type__0': 'smallint', 'precision__0': 5.0, 'source_table__0': 'actor', 'source_type__0': 'MySQL', 'length__0': None, 'COLUMN_NAME__0': 'actor_id', 'key_constraint__1': '', 'source_schema__1': 'sakila', 'target_table__1': 'stg_actor', 'nullable__1': 0, 'column_id__1': 2, 'scale__1': None, 'source_data_type__1': 'varchar', 'precision__1': None, 'source_table__1': 'actor', 'source_type__1': 'MySQL', 'length__1': 45.0, 'COLUMN_NAME__1': 'first_name', 'key_constraint__2': '', 'source_schema__2': 'sakila', 'target_table__2': 'stg_actor', 'nullable__2': 0, 'column_id__2': 3, 'scale__2': None, 'source_data_type__2': 'varchar', 'precision__2': None, 'source_table__2': 'actor', 'source_type__2': 'MySQL', 'length__2': 45.0, 'COLUMN_NAME__2': 'last_name', 'key_constraint__3': '', 'source_schema__3': 'sakila', 'target_table__3': 'stg_actor', 'nullable__3': 0, 'column_id__3': 4, 'scale__3': None, 'source_data_type__3': 'timestamp', 'precision__3': None, 'source_table__3': 'actor', 'source_type__3': 'MySQL', 'length__3': None, 'COLUMN_NAME__3': 'last_update'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 0.12 seconds
+Total time taken 0.12 seconds

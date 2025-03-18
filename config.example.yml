@@ -1,0 +1,93 @@
+source-config: # PostgreSQL
+  dialect: postgresql
+  driver: PostgreSQL Unicode
+  connection:
+    host: localhost  
+    port: 5432
+    database: postgres
+    username: postgres  
+    password: sql  
+    schema: ods
+
+SqlServer:
+  dialect: mssql+pyodbc
+  driver: ODBC Driver 17 for SQL Server
+  connection:
+    host: localhost 
+    port: 1433 
+    database: IHG
+    username: jeevan  
+    password: sql
+
+staging: # PostgreSQL
+  dialect: postgresql
+  driver: PostgreSQL Unicode
+  connection:
+    host: localhost
+    port: 5432
+    database: ETL
+    username: postgres  
+    password: sql  
+    schema: stg
+
+dwh: # PostgreSQL
+  dialect: postgresql
+  driver: PostgreSQL Unicode
+  connection:
+    host: host.docker.internal  
+    port: 5433
+    database: postgres
+    username: airflow  
+    password: airflow  
+    schema: dwh
+
+clickhouse:
+  dialect: clickhouse
+  driver: 
+  connection:
+    host: host.docker.internal 
+    port: 8123
+    database: 
+    username: 
+    password: 
+
+clickhouse-tcp: 
+  dialect: clickhouse
+  driver: 
+  connection:
+    host: host.docker.internal 
+    port: 9000
+    database: 
+    username: 
+    password: 
+
+
+MySQL:
+  dialect: mysql+pymysql
+  driver: MySQL
+  connection:
+    host: localhost
+    port: 3306
+    database: sakila
+    username: root
+    password: mysql
+
+PostgreSQL:
+  dialect: postgresql
+  driver: PostgreSQL Unicode
+  connection:
+    host: localhost
+    port: 5432
+    database: IHG
+    username: postgres
+    password: sql
+
+giri:
+  dialect: mssql+pyodbc
+  driver: ODBC Driver 17 for SQL Server
+  connection:
+    host: 192.168.0.63
+    port: 1434
+    database: prac
+    username: lin
+    password: sql

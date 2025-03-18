@@ -1,0 +1,42 @@
+1 entries in records
+1 entries in records
+🔹 Extracting schema from SQL Server source: dwh.ga4_details
+🔹 Extracting schema from SQL Server source: dwh.ga4_details
+✅ Metadata for dwh.ga4_details stored in source_lookup successfully!
+✅ Metadata for dwh.ga4_details stored in source_lookup successfully!
+✅ Stored procedure ods.usp_SrcToMain_lookup executed successfully!
+✅ Stored procedure ods.usp_SrcToMain_lookup executed successfully!
+🔹 Generating CREATE TABLE statements from main_lookup...
+🔹 Generating CREATE TABLE statements from main_lookup...
+❌ Error processing record ga4_details: (psycopg2.errors.SyntaxError) syntax error at or near "-"
+LINE 5:     "unifiedpagepathscreen" VARCHAR(-1),
+                                            ^
+
+[SQL: CREATE TABLE IF NOT EXISTS stg."stg_ga4_details" (
+    "id" INTEGER,
+    "propertyid" INTEGER,
+    "metrics_date" DATE,
+    "unifiedpagepathscreen" VARCHAR(-1),
+    "sessions" INTEGER,
+    "etl_createddate" TIMESTAMP,
+    PRIMARY KEY ("id")
+);]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+❌ Error processing record ga4_details: (psycopg2.errors.SyntaxError) syntax error at or near "-"
+LINE 5:     "unifiedpagepathscreen" VARCHAR(-1),
+                                            ^
+
+[SQL: CREATE TABLE IF NOT EXISTS stg."stg_ga4_details" (
+    "id" INTEGER,
+    "propertyid" INTEGER,
+    "metrics_date" DATE,
+    "unifiedpagepathscreen" VARCHAR(-1),
+    "sessions" INTEGER,
+    "etl_createddate" TIMESTAMP,
+    PRIMARY KEY ("id")
+);]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 1.37 seconds
+Total time taken 1.37 seconds

@@ -1,0 +1,10 @@
+1 entries in records
+1 entries in records
+🔹 Extracting schema from SQL Server source: Sales.salesorderdetail
+🔹 Extracting schema from SQL Server source: Sales.salesorderdetail
+✅ Metadata for Sales.salesorderdetail stored in source_lookup successfully!
+✅ Metadata for Sales.salesorderdetail stored in source_lookup successfully!
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 1.49 seconds
+Total time taken 1.49 seconds

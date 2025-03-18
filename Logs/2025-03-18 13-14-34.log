@@ -1,0 +1,24 @@
+1 entries in records
+1 entries in records
+🔹 Extracting schema from Flatfile source: None.sales.csv
+🔹 Extracting schema from Flatfile source: None.sales.csv
+⚠️ No metadata extraction logic for source type: Flatfile
+⚠️ No metadata extraction logic for source type: Flatfile
+⚠️ No metadata found for None.sales.csv
+⚠️ No metadata found for None.sales.csv
+🔹 Generating CREATE TABLE statements from main_lookup...
+🔹 Generating CREATE TABLE statements from main_lookup...
+✅ Table creation process completed!
+✅ Table creation process completed!
+🔹 Processing DB record: sales
+🔹 Processing DB record: sales
+❌ DB extraction error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'FROM'. (156) (SQLExecDirectW)")
+[SQL: SELECT  FROM None.sales.csv]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+❌ DB extraction error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'FROM'. (156) (SQLExecDirectW)")
+[SQL: SELECT  FROM None.sales.csv]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 0.58 seconds
+Total time taken 0.58 seconds

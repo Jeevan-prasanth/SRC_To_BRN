@@ -1,0 +1,66 @@
+1 entries in records
+1 entries in records
+🔹 Extracting schema from SQL Server source: Person.address
+🔹 Extracting schema from SQL Server source: Person.address
+✅ Metadata for Person.address stored in source_lookup successfully!
+✅ Metadata for Person.address stored in source_lookup successfully!
+❌ Error processing record address: (psycopg2.errors.UndefinedTable) relation "datatype_mapping" does not exist
+LINE 19:     LEFT JOIN datatype_mapping m
+                       ^
+QUERY:  INSERT INTO ods.main_lookup (
+        column_id, column_name,  target_table, 
+        target_data_type, length, precision, scale, nullable, 
+        key_constraint, processing_layer, default_value
+    )
+    SELECT 
+        s.column_id,
+        s.column_name,
+        s.target_table,
+        COALESCE(m.targetdatatypes, 'text') AS target_data_type, -- Use mapping, else UNKNOWN
+        s.length,
+        s.precision,
+        s.scale,
+        s.nullable,
+        s.key_constraint,
+        'BRN' AS processing_layer, -- Modify based on ETL layer (e.g., 'raw', 'staging', 'gold')
+        NULL AS default_value -- Modify if you need to derive default values
+    FROM ods.source_lookup s
+    LEFT JOIN datatype_mapping m
+        ON s.source_data_type = lower(m.sourcedatatypes)
+        AND s.source_type = m.sourcedatabasetype
+CONTEXT:  PL/pgSQL function ods.usp_srctomain_lookup() line 4 at SQL statement
+
+[SQL: CALL ods.usp_srctomain_lookup();]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+❌ Error processing record address: (psycopg2.errors.UndefinedTable) relation "datatype_mapping" does not exist
+LINE 19:     LEFT JOIN datatype_mapping m
+                       ^
+QUERY:  INSERT INTO ods.main_lookup (
+        column_id, column_name,  target_table, 
+        target_data_type, length, precision, scale, nullable, 
+        key_constraint, processing_layer, default_value
+    )
+    SELECT 
+        s.column_id,
+        s.column_name,
+        s.target_table,
+        COALESCE(m.targetdatatypes, 'text') AS target_data_type, -- Use mapping, else UNKNOWN
+        s.length,
+        s.precision,
+        s.scale,
+        s.nullable,
+        s.key_constraint,
+        'BRN' AS processing_layer, -- Modify based on ETL layer (e.g., 'raw', 'staging', 'gold')
+        NULL AS default_value -- Modify if you need to derive default values
+    FROM ods.source_lookup s
+    LEFT JOIN datatype_mapping m
+        ON s.source_data_type = lower(m.sourcedatatypes)
+        AND s.source_type = m.sourcedatabasetype
+CONTEXT:  PL/pgSQL function ods.usp_srctomain_lookup() line 4 at SQL statement
+
+[SQL: CALL ods.usp_srctomain_lookup();]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Finished running source to staging in series
+Finished running source to staging in series
+Total time taken 0.68 seconds
+Total time taken 0.68 seconds
