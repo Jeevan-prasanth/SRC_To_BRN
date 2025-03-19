@@ -13,10 +13,10 @@ from sqlalchemy.sql.sqltypes import NullType
 class DatabaseETL:
     """Handles data extraction from various sources and loads it into the staging database."""
 
-    def __init__(self):
+    def __init__(self,sourcetype):
         """Initialize ETL process, load config, and establish connections."""
         self.db_manager = DBConnectionManager()
-        self.engine_source = self.db_manager.new_db_connection("SqlServer")
+        self.engine_source = self.db_manager.new_db_connection(sourcetype)
         self.engine_staging = self.db_manager.new_db_connection("staging")
         self.engine_srcconfig = self.db_manager.new_db_connection("source-config")
         self.logger = LoggerManager().logger

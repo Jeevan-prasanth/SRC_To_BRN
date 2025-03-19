@@ -13,7 +13,7 @@ class ETLRunner:
     def __init__(self, args):
         self.args = args
         self.logger = LoggerManager().logger
-        self.db=DatabaseETL()
+        self.db=None
     '''
     def ensure_databases_online(self, dbs, user_agent):
         conn = DBConnectionManager().new_db_connection("source", use_sqlalchemy=False, database="master")
@@ -66,16 +66,33 @@ User Agent: {user_agent}
             for record in records:
                 self.logger.info(f"{record.dataflowflag:<20} - {record.sourceid}")
             sys.exit(0)
-
+        
+        
         time_start = time.perf_counter()
         if self.args.parallel:
             with concurrent.futures.ProcessPoolExecutor(max_workers=min(len(records), 8)) as executor:
-                for record in records:
-                    executor.submit(self.db.copy_single_record_from_source, record)
+                futures = {
+                    executor.submit(DatabaseETL(record.sourcetype).copy_single_record_from_source, record): record
+                    for record in records
+                }
+
+                for future in concurrent.futures.as_completed(futures):
+                    record = futures[future]
+                    try:
+                        future.result()  # Ensure task completion and handle errors
+                    except Exception as e:
+                        self.logger.error(f"❌ Error processing record {record.sourceobject}: {e}")
+
+
             self.logger.info("Finished running source to staging in parallel")
         else:
+            previous_sourcetype = None  # Track last used sourcetype
             for record in records:
-                self.db.copy_single_record_from_source(record)
+                if record.sourcetype != previous_sourcetype:
+                    self.db = DatabaseETL(record.sourcetype)  # Reinitialize only when sourcetype changes
+                    previous_sourcetype = record.sourcetype  # Update tracker
+                
+                self.db.copy_single_record_from_source(record)  # Process record
             self.logger.info("Finished running source to staging in series")
 
         time_end = time.perf_counter()

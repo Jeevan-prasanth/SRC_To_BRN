@@ -9,7 +9,7 @@ source-config: # PostgreSQL
     password: sql  
     schema: ods
 
-SqlServer:
+SQL Server:
   dialect: mssql+pyodbc
   driver: ODBC Driver 17 for SQL Server
   connection:
