@@ -1,0 +1,75 @@
+4 entries in records
+✅ Finished running source to staging in parallel
+Location 'Flatfile' not found in config.
+Location 'API' not found in config.
+🔹 Processing flat file: titanic.parquet
+🔹 Processing API record: sampleapi
+🔹 Extracting schema from SQL Server source: dwh.ga4_details
+🔹 Extracting schema from MySQL source: sakila.actor
+✅ Metadata for titanic.parquet stored in source_lookup!
+✅ Stored procedure ods.usp_SrcToMain_lookup executed successfully!
+🔹 Generating CREATE TABLE statements from main_lookup...
+✅ Table creation process completed!
+✅ Metadata for sampleapi stored in source_lookup!
+✅ Copied 891 records to staging
+✅ Metadata for sakila.actor stored in source_lookup successfully!
+✅ Stored procedure ods.usp_SrcToMain_lookup executed successfully!
+🔹 Generating CREATE TABLE statements from main_lookup...
+✅ Stored procedure ods.usp_SrcToMain_lookup executed successfully!
+🔹 Generating CREATE TABLE statements from main_lookup...
+❌ API processing error: (psycopg2.errors.DuplicateColumn) column "actor_id" appears twice in primary key constraint
+LINE 10:     PRIMARY KEY ("actor_id", "actor_id")
+             ^
+
+[SQL: CREATE TABLE IF NOT EXISTS stg."stg_actor" (
+    "actor_id" text NOT NULL,
+    "actor_id" text NOT NULL,
+    "first_name" text NOT NULL,
+    "first_name" text NOT NULL,
+    "last_name" text NOT NULL,
+    "last_name" text NOT NULL,
+    "last_update" text NOT NULL,
+    "last_update" text NOT NULL,
+    PRIMARY KEY ("actor_id", "actor_id")
+);]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+❌ Error processing record actor: (psycopg2.errors.DuplicateColumn) column "actor_id" appears twice in primary key constraint
+LINE 10:     PRIMARY KEY ("actor_id", "actor_id")
+             ^
+
+[SQL: CREATE TABLE IF NOT EXISTS stg."stg_actor" (
+    "actor_id" text NOT NULL,
+    "actor_id" text NOT NULL,
+    "first_name" text NOT NULL,
+    "first_name" text NOT NULL,
+    "last_name" text NOT NULL,
+    "last_name" text NOT NULL,
+    "last_update" text NOT NULL,
+    "last_update" text NOT NULL,
+    PRIMARY KEY ("actor_id", "actor_id")
+);]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+✅ Metadata for dwh.ga4_details stored in source_lookup successfully!
+✅ Stored procedure ods.usp_SrcToMain_lookup executed successfully!
+🔹 Generating CREATE TABLE statements from main_lookup...
+❌ Error processing record ga4_details: (psycopg2.errors.DuplicateColumn) column "actor_id" appears twice in primary key constraint
+LINE 14:     PRIMARY KEY ("actor_id", "actor_id", "actor_id")
+             ^
+
+[SQL: CREATE TABLE IF NOT EXISTS stg."stg_actor" (
+    "actor_id" text NOT NULL,
+    "actor_id" text NOT NULL,
+    "actor_id" text NOT NULL,
+    "first_name" text NOT NULL,
+    "first_name" text NOT NULL,
+    "first_name" text NOT NULL,
+    "last_name" text NOT NULL,
+    "last_name" text NOT NULL,
+    "last_name" text NOT NULL,
+    "last_update" text NOT NULL,
+    "last_update" text NOT NULL,
+    "last_update" text NOT NULL,
+    PRIMARY KEY ("actor_id", "actor_id", "actor_id")
+);]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Total time taken 1.34 seconds

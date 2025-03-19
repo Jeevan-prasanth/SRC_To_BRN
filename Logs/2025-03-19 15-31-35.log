@@ -1,0 +1,7 @@
+4 entries in records
+❌ Error processing record actor: Can't pickle <class 'SrctoStg.onesource.Record'>: attribute lookup Record on SrctoStg.onesource failed
+❌ Error processing record ga4_details: Can't pickle <class 'SrctoStg.onesource.Record'>: attribute lookup Record on SrctoStg.onesource failed
+❌ Error processing record titanic.parquet: Can't pickle <class 'SrctoStg.onesource.Record'>: attribute lookup Record on SrctoStg.onesource failed
+❌ Error processing record sampleapi: Can't pickle <class 'SrctoStg.onesource.Record'>: attribute lookup Record on SrctoStg.onesource failed
+✅ Finished running source to staging in parallel
+Total time taken 0.41 seconds

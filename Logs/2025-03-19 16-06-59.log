@@ -1,0 +1,37 @@
+📋 1 entries found in records
+Location 'Flatfile' not found in config.
+🔹 Processing flat file: titanic.parquet
+✅ Metadata for titanic.parquet stored in source_lookup!
+✅ Stored procedure ods.usp_SrcToMain_lookup executed successfully!
+🔹 Generating CREATE TABLE statements from main_lookup...
+❌ Flat file processing error: (psycopg2.errors.DuplicateColumn) column "passengerid" specified more than once
+
+[SQL: CREATE TABLE IF NOT EXISTS stg."stg_titanic" (
+    PassengerId BIGINT,
+    PassengerId BIGINT,
+    Survived BIGINT,
+    Survived BIGINT,
+    Pclass BIGINT,
+    Pclass BIGINT,
+    Name TEXT,
+    Name TEXT,
+    Sex TEXT,
+    Sex TEXT,
+    Age DOUBLE PRECISION,
+    Age DOUBLE PRECISION,
+    SibSp BIGINT,
+    SibSp BIGINT,
+    Parch BIGINT,
+    Parch BIGINT,
+    Ticket TEXT,
+    Ticket TEXT,
+    Fare DOUBLE PRECISION,
+    Fare DOUBLE PRECISION,
+    Cabin TEXT,
+    Cabin TEXT,
+    Embarked TEXT,
+    Embarked TEXT
+);]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+✅ Finished running source to staging in series.
+⏱️ Total time taken: 0.34 seconds

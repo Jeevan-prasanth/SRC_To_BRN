@@ -1,0 +1,31 @@
+4 entries in records
+✅ Finished running source to staging in parallel
+Location 'API' not found in config.
+Location 'Flatfile' not found in config.
+🔹 Processing API record: sampleapi
+🔹 Processing flat file: titanic.parquet
+🔹 Extracting schema from SQL Server source: dwh.ga4_details
+🔹 Extracting schema from MySQL source: sakila.actor
+✅ Metadata for titanic.parquet stored in source_lookup!
+✅ Stored procedure ods.usp_SrcToMain_lookup executed successfully!
+🔹 Generating CREATE TABLE statements from main_lookup...
+✅ Table creation process completed!
+✅ Metadata for sakila.actor stored in source_lookup successfully!
+✅ Stored procedure ods.usp_SrcToMain_lookup executed successfully!
+🔹 Generating CREATE TABLE statements from main_lookup...
+✅ Copied 891 records to staging
+✅ Table creation process completed!
+🔹 Processing DB record: actor
+✅ Copied 200 records to staging
+✅ Metadata for sampleapi stored in source_lookup!
+✅ Stored procedure ods.usp_SrcToMain_lookup executed successfully!
+🔹 Generating CREATE TABLE statements from main_lookup...
+✅ Table creation process completed!
+✅ Copied 100 records to staging
+✅ Metadata for dwh.ga4_details stored in source_lookup successfully!
+✅ Stored procedure ods.usp_SrcToMain_lookup executed successfully!
+🔹 Generating CREATE TABLE statements from main_lookup...
+✅ Table creation process completed!
+🔹 Processing DB record: ga4_details
+✅ Copied 24194 records to staging
+Total time taken 4.08 seconds

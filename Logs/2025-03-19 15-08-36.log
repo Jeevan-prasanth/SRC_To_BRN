@@ -1,0 +1,9 @@
+4 entries in records
+Location 'Flatfile' not found in config.
+Location 'API' not found in config.
+❌ Error processing record titanic.parquet: Can't pickle local object 'create_engine.<locals>.connect'
+❌ Error processing record ga4_details: Can't pickle local object 'create_engine.<locals>.connect'
+❌ Error processing record actor: Can't pickle local object 'create_engine.<locals>.connect'
+❌ Error processing record sampleapi: Can't pickle local object 'create_engine.<locals>.connect'
+Finished running source to staging in parallel
+Total time taken 0.48 seconds

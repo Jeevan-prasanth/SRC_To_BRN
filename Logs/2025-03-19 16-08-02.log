@@ -1,0 +1,16 @@
+📋 1 entries found in records
+Location 'Flatfile' not found in config.
+🔹 Processing flat file: titanic.parquet
+✅ Metadata for titanic.parquet stored in source_lookup!
+✅ Stored procedure ods.usp_SrcToMain_lookup executed successfully!
+🔹 Generating CREATE TABLE statements from main_lookup...
+✅ Table creation process completed!
+❌ Flat file processing error: (psycopg2.errors.UndefinedColumn) column "PassengerId" of relation "stg_titanic" does not exist
+LINE 1: INSERT INTO stg.stg_titanic ("PassengerId", "Survived", "Pcl...
+                                     ^
+
+[SQL: INSERT INTO stg.stg_titanic ("PassengerId", "Survived", "Pclass", "Name", "Sex", "Age", "SibSp", "Parch", "Ticket", "Fare", "Cabin", "Embarked") VALUES (%(PassengerId__0)s, %(Survived__0)s, %(Pclass__0)s, %(Name__0)s, %(Sex__0)s, %(Age__0)s, %(SibSp_ ... 178462 characters truncated ... , %(SibSp__890)s, %(Parch__890)s, %(Ticket__890)s, %(Fare__890)s, %(Cabin__890)s, %(Embarked__890)s)]
+[parameters: {'Age__0': 22.0, 'Fare__0': 7.25, 'Parch__0': 0, 'Name__0': 'Braund, Mr. Owen Harris', 'SibSp__0': 1, 'Sex__0': 'male', 'Cabin__0': None, 'Ticket__0': 'A/5 21171', 'Survived__0': 0, 'PassengerId__0': 1, 'Pclass__0': 3, 'Embarked__0': 'S', 'Age__1': 38.0, 'Fare__1': 71.2833, 'Parch__1': 0, 'Name__1': 'Cumings, Mrs. John Bradley (Florence Briggs Thayer)', 'SibSp__1': 1, 'Sex__1': 'female', 'Cabin__1': 'C85', 'Ticket__1': 'PC 17599', 'Survived__1': 1, 'PassengerId__1': 2, 'Pclass__1': 1, 'Embarked__1': 'C', 'Age__2': 26.0, 'Fare__2': 7.925, 'Parch__2': 0, 'Name__2': 'Heikkinen, Miss. Laina', 'SibSp__2': 0, 'Sex__2': 'female', 'Cabin__2': None, 'Ticket__2': 'STON/O2. 3101282', 'Survived__2': 1, 'PassengerId__2': 3, 'Pclass__2': 3, 'Embarked__2': 'S', 'Age__3': 35.0, 'Fare__3': 53.1, 'Parch__3': 0, 'Name__3': 'Futrelle, Mrs. Jacques Heath (Lily May Peel)', 'SibSp__3': 1, 'Sex__3': 'female', 'Cabin__3': 'C123', 'Ticket__3': '113803', 'Survived__3': 1, 'PassengerId__3': 4, 'Pclass__3': 1, 'Embarked__3': 'S', 'Age__4': 35.0, 'Fare__4': 8.05 ... 10592 parameters truncated ... 'Pclass__886': 2, 'Embarked__886': 'S', 'Age__887': 19.0, 'Fare__887': 30.0, 'Parch__887': 0, 'Name__887': 'Graham, Miss. Margaret Edith', 'SibSp__887': 0, 'Sex__887': 'female', 'Cabin__887': 'B42', 'Ticket__887': '112053', 'Survived__887': 1, 'PassengerId__887': 888, 'Pclass__887': 1, 'Embarked__887': 'S', 'Age__888': None, 'Fare__888': 23.45, 'Parch__888': 2, 'Name__888': 'Johnston, Miss. Catherine Helen "Carrie"', 'SibSp__888': 1, 'Sex__888': 'female', 'Cabin__888': None, 'Ticket__888': 'W./C. 6607', 'Survived__888': 0, 'PassengerId__888': 889, 'Pclass__888': 3, 'Embarked__888': 'S', 'Age__889': 26.0, 'Fare__889': 30.0, 'Parch__889': 0, 'Name__889': 'Behr, Mr. Karl Howell', 'SibSp__889': 0, 'Sex__889': 'male', 'Cabin__889': 'C148', 'Ticket__889': '111369', 'Survived__889': 1, 'PassengerId__889': 890, 'Pclass__889': 1, 'Embarked__889': 'C', 'Age__890': 32.0, 'Fare__890': 7.75, 'Parch__890': 0, 'Name__890': 'Dooley, Mr. Patrick', 'SibSp__890': 0, 'Sex__890': 'male', 'Cabin__890': None, 'Ticket__890': '370376', 'Survived__890': 0, 'PassengerId__890': 891, 'Pclass__890': 3, 'Embarked__890': 'Q'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+✅ Finished running source to staging in series.
+⏱️ Total time taken: 0.34 seconds

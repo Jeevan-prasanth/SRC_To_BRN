@@ -5,6 +5,7 @@ import pyodbc
 import oracledb
 import psycopg2
 import clickhouse_driver
+from SrctoStg.logs import LoggerManager
 from urllib.parse import quote_plus
 from sqlalchemy import create_engine
 from sqlalchemy.pool import QueuePool
@@ -30,6 +31,7 @@ class DBConnectionManager:
         self.max_overflow = max_overflow
         self.max_retries = max_retries
         self.sqlalchemy_engines = {}  # Stores SQLAlchemy engines
+        self.logger = LoggerManager().logger
 
     @retry(
         stop=stop_after_attempt(3),
@@ -50,7 +52,9 @@ class DBConnectionManager:
         """
         try:
             if location not in self.config:
-                raise KeyError(f"Location '{location}' not found in config.")
+                self.logger.error(f"Location '{location}' not found in config.")
+                return None
+                
 
             config_section = self.config[location]
             if "connection" not in config_section:
