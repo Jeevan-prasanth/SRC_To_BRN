@@ -6,7 +6,7 @@ source-config: # PostgreSQL
     port: 5432
     database: postgres
     username: postgres  
-    password: sql  
+    password:   
     schema: ods
 
 SQL Server:
@@ -17,7 +17,7 @@ SQL Server:
     port: 1433 
     database: IHG
     username: jeevan
-    password: sql
+    password: 
 
 staging: # PostgreSQL
   dialect: postgresql
@@ -27,7 +27,7 @@ staging: # PostgreSQL
     port: 5432
     database: ETL
     username: postgres  
-    password: sql  
+    password:   
     schema: stg
 
 dwh: # PostgreSQL
@@ -38,7 +38,7 @@ dwh: # PostgreSQL
     port: 5433
     database: postgres
     username: postgres  
-    password: sql  
+    password:   
     schema: dwh
 
 clickhouse:
@@ -70,7 +70,7 @@ MySQL:
     port: 3306
     database: sakila
     username: root
-    password: mysql
+    password: 
 
 PostgreSQL:
   dialect: postgresql
@@ -80,6 +80,6 @@ PostgreSQL:
     port: 5432
     database: db
     username: postgres
-    password: sql
+    password: 
 
 
