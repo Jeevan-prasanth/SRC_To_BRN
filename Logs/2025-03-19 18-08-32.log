@@ -1,0 +1,11 @@
+📋 1 entries found in records
+🔹 Extracting schema from SQL Server source: Person.person
+⚠️ No metadata found for Person.person
+🔹 Generating CREATE TABLE statements from main_lookup...
+✅ Table creation process completed!
+🔹 Processing DB record: person
+❌ DB extraction error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'FROM'. (156) (SQLExecDirectW)")
+[SQL: SELECT  FROM Person.person]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+✅ Finished running source to staging in series.
+⏱️ Total time taken: 0.70 seconds

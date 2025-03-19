@@ -1,0 +1,10 @@
+📋 1 entries found in records
+🔹 Extracting schema from SQL Server source: dwh.ga4_details
+✅ Metadata for dwh.ga4_details stored in source_lookup successfully!
+✅ Stored procedure ods.usp_SrcToMain_lookup executed successfully!
+🔹 Generating CREATE TABLE statements from main_lookup...
+✅ Table creation process completed!
+🔹 Processing DB record: ga4_details
+✅ Copied 24194 records to staging
+✅ Finished running source to staging in series.
+⏱️ Total time taken: 2.63 seconds

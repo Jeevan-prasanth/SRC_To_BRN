@@ -1,0 +1,36 @@
+📋 4 entries found in records
+Location 'Flatfile' not found in config.
+🔹 Processing flat file: titanic.parquet
+✅ Finished running source to staging in parallel.
+Location 'API' not found in config.
+🔹 Processing API record: sampleapi
+🔹 Extracting schema from SQL Server source: dwh.ga4_details
+🔹 Extracting schema from MySQL source: sakila.actor
+✅ Metadata for titanic.parquet stored in source_lookup!
+✅ Stored procedure ods.usp_SrcToMain_lookup executed successfully!
+🔹 Generating CREATE TABLE statements from main_lookup...
+✅ Metadata for sakila.actor stored in source_lookup successfully!
+✅ Table creation process completed!
+✅ Stored procedure ods.usp_SrcToMain_lookup executed successfully!
+🔹 Generating CREATE TABLE statements from main_lookup...
+✅ Copied 891 records to staging
+✅ Successfully processed record: titanic.parquet
+✅ Table creation process completed!
+🔹 Processing DB record: actor
+✅ Copied 200 records to staging
+✅ Successfully processed record: actor
+✅ Metadata for sampleapi stored in source_lookup!
+✅ Stored procedure ods.usp_SrcToMain_lookup executed successfully!
+🔹 Generating CREATE TABLE statements from main_lookup...
+⚠️ No metadata found for dwh.ga4_details
+🔹 Generating CREATE TABLE statements from main_lookup...
+✅ Table creation process completed!
+✅ Copied 100 records to staging
+✅ Successfully processed record: sampleapi
+✅ Table creation process completed!
+🔹 Processing DB record: ga4_details
+❌ DB extraction error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'FROM'. (156) (SQLExecDirectW)")
+[SQL: SELECT  FROM dwh.ga4_details]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+✅ Successfully processed record: ga4_details
+⏱️ Total time taken: 0.73 seconds

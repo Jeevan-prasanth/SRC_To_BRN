@@ -194,16 +194,18 @@ class DatabaseETL:
 
         with self.engine_srcconfig.connect() as conn:
             df = pd.read_sql(query, conn)
-
+        
+        
         # Group by target_table to create tables
         tables = df.groupby("target_table")
+        
 
         for table, group in tables:
             columns_def = []
             primary_keys = []  # List to store primary key columns
 
             for _, row in group.iterrows():
-                col_def = f'"{row["column_name"]}" {row["target_data_type"]}'
+                col_def = f'{row["column_name"]} {row["target_data_type"]}'
 
                 # ✅ Apply length only for VARCHAR, CHAR, TEXT-like types
                 if row["target_data_type"].upper() in ["VARCHAR", "CHAR"] and pd.notna(row["length"]):
@@ -225,7 +227,7 @@ class DatabaseETL:
 
                 # ✅ Handle constraints
                 if row["key_constraint"] == "PRIMARY KEY":
-                    primary_keys.append(f'"{row["column_name"]}"')  # Add column name to primary key list
+                    primary_keys.append(f'{row["column_name"]}')  # Add column name to primary key list
                 elif row["key_constraint"] == "UNIQUE":
                     col_def += " UNIQUE"
 
@@ -264,6 +266,7 @@ class DatabaseETL:
                 df = pd.read_sql_query(text(query), conn_source)
                 # ✅ **Convert Data Types Dynamically**
                 df = self.convert_data_types(df, target_db="PostgreSQL")
+                df.columns = [col.lower().strip() for col in df.columns]
 
 
                 # ✅ **Optimize Column Name Formatting**
@@ -359,6 +362,9 @@ class DatabaseETL:
             else:
                 self.logger.error(f"❌ Unsupported file format: {file_extension}")
                 return 0
+            
+            #df.columns = df.columns.str.strip('"')
+            df.columns = [col.lower().strip() for col in df.columns]
 
             # ✅ Extract schema from first few rows (without re-reading the file)
             schema_df = df.head(5)
@@ -419,6 +425,7 @@ class DatabaseETL:
             response.raise_for_status()
 
             df = pd.json_normalize(response.json())
+            df.columns = [col.lower().strip() for col in df.columns]
 
             # ✅ Extract schema from first few rows
             schema_df = df.head(5)

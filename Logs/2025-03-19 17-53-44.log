@@ -1,0 +1,33 @@
+📋 1 entries found in records
+🔹 Extracting schema from SQL Server source: dwh.ga4_details
+✅ Metadata for dwh.ga4_details stored in source_lookup successfully!
+✅ Stored procedure ods.usp_SrcToMain_lookup executed successfully!
+🔹 Generating CREATE TABLE statements from main_lookup...
+❌ Error processing record ga4_details: (psycopg2.errors.DuplicateColumn) column "id" appears twice in primary key constraint
+LINE 20:     PRIMARY KEY (id, id, id)
+             ^
+
+[SQL: CREATE TABLE IF NOT EXISTS stg."stg_ga4_details" (
+    id INTEGER,
+    id INTEGER,
+    id INTEGER,
+    propertyid INTEGER,
+    propertyid INTEGER,
+    propertyid INTEGER,
+    metrics_date DATE,
+    metrics_date DATE,
+    metrics_date DATE,
+    unifiedpagepathscreen VARCHAR,
+    unifiedpagepathscreen VARCHAR,
+    unifiedpagepathscreen VARCHAR,
+    sessions INTEGER,
+    sessions INTEGER,
+    sessions INTEGER,
+    etl_createddate TIMESTAMP,
+    etl_createddate TIMESTAMP,
+    etl_createddate TIMESTAMP,
+    PRIMARY KEY (id, id, id)
+);]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+✅ Finished running source to staging in series.
+⏱️ Total time taken: 0.61 seconds

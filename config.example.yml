@@ -15,7 +15,7 @@ SQL Server:
   connection:
     host: localhost 
     port: 1433 
-    database: IHG
+    database: AdventureWorks2022
     username: jeevan
     password: sql
 

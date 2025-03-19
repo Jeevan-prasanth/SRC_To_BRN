@@ -1,0 +1,10 @@
+📋 1 entries found in records
+Location 'Flatfile' not found in config.
+🔹 Processing flat file: titanic.parquet
+✅ Metadata for titanic.parquet stored in source_lookup!
+✅ Stored procedure ods.usp_SrcToMain_lookup executed successfully!
+🔹 Generating CREATE TABLE statements from main_lookup...
+✅ Table creation process completed!
+✅ Copied 891 records to staging
+✅ Finished running source to staging in series.
+⏱️ Total time taken: 0.18 seconds
