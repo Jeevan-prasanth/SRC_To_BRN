@@ -6,7 +6,7 @@ source-config: # PostgreSQL
     port: 5432
     database: postgres
     username: postgres  
-    password: sql  
+    password: ***  
     schema: ods
 
 SQL Server:
@@ -16,8 +16,8 @@ SQL Server:
     host: localhost 
     port: 1433 
     database: IHG
-    username: jeevan  
-    password: sql
+    username: *****  
+    password: ***
 
 staging: # PostgreSQL
   dialect: postgresql
@@ -27,25 +27,25 @@ staging: # PostgreSQL
     port: 5432
     database: ETL
     username: postgres  
-    password: sql  
+    password: ***  
     schema: stg
 
 dwh: # PostgreSQL
   dialect: postgresql
   driver: PostgreSQL Unicode
   connection:
-    host: host.docker.internal  
+    host: localhost 
     port: 5433
     database: postgres
-    username: airflow  
-    password: airflow  
+    username: ***  
+    password: ***  
     schema: dwh
 
 clickhouse:
   dialect: clickhouse
   driver: 
   connection:
-    host: host.docker.internal 
+    host: localhost 
     port: 8123
     database: 
     username: 
@@ -55,7 +55,7 @@ clickhouse-tcp:
   dialect: clickhouse
   driver: 
   connection:
-    host: host.docker.internal 
+    host: localhost
     port: 9000
     database: 
     username: 
@@ -68,9 +68,9 @@ MySQL:
   connection:
     host: localhost
     port: 3306
-    database: sakila
+    database: db
     username: root
-    password: mysql
+    password: **
 
 PostgreSQL:
   dialect: postgresql
@@ -78,16 +78,8 @@ PostgreSQL:
   connection:
     host: localhost
     port: 5432
-    database: IHG
+    database: db
     username: postgres
-    password: sql
+    password: ***
 
-giri:
-  dialect: mssql+pyodbc
-  driver: ODBC Driver 17 for SQL Server
-  connection:
-    host: 192.168.0.63
-    port: 1434
-    database: prac
-    username: lin
-    password: sql
+
